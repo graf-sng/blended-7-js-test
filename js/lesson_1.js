@@ -28,8 +28,8 @@
 
 
 // ЗАДАЧА 4
-// ВИКОРИСТОВУЮЧИ КОНСТРУКЦІЮ IF...ELSE , НАПИШИ КОД, ЯКИЙ БУДЕ ЗАПИТУВАТИ: 
-// "СКІЛЬКИ МІСЯЦІВ МАЄ РІК", ЯКЩО КОРИСТУВАЧ ВВОДИТЬ 12 ТО У КОНСОЛІ ПИШЕ ВІРНО, ЯКЩО НЕ ПРАВИЛЬНО КОРИСТУВАЧ ВВІВ, ТОДІ У КОНСОЛІ ПИШЕ 
+// ВИКОРИСТОВУЮЧИ КОНСТРУКЦІЮ IF...ELSE , НАПИШИ КОД, ЯКИЙ БУДЕ ЗАПИТУВАТИ:
+// "СКІЛЬКИ МІСЯЦІВ МАЄ РІК", ЯКЩО КОРИСТУВАЧ ВВОДИТЬ 12 ТО У КОНСОЛІ ПИШЕ ВІРНО, ЯКЩО НЕ ПРАВИЛЬНО КОРИСТУВАЧ ВВІВ, ТОДІ У КОНСОЛІ ПИШЕ
 // "НЕ ЗНАЄТЕ? 12"
 
 // const year = Number(prompt('Скільки місяців має рік?'));
@@ -101,18 +101,45 @@
 
 
 // ЗАДАЧА 2
-// Напишіть ф-цію logItems(array) , яка буде получати масив і використовуючи цикл for , який для кожного елемента масива буде виводити в консоль 
+// Напишіть ф-цію logItems(array) , яка буде получати масив і використовуючи цикл for , який для кожного елемента масива буде виводити в консоль
 // повідомлення у форматі <індекс елемента> та <значення елемента>.
 // Номерація для кожного елемента масива ['Mango', 'Poly', 'Ajax'] з індексом 0 буде виведено 1 - Mango, а для индекса 2 выведет 3 - Ajax.
 
-const users =  ['Mango', 'Poly', 'Ajax'];
-const logItems = function(array){
+// const users =  ['Mango', 'Poly', 'Ajax'];
+// const logItems = function(array){
 
-    for( let i = 0; i < users.length; i ++){
-        // console.log(i);
-        // console.log(users[i]);
-        console.log(i, users[i]);
-    }
+//     for( let i = 0; i < users.length; i ++){
+//         // console.log(i);
+//         // console.log(users[i]);
+//         console.log(i, users[i]);
+//     }
+// }
+
+// logItems();
+// ЗАДАЧА 3
+// Напишіть код , який шукає саме найменше число в масиві
+// 1) напишіть циклом for
+// const numbers = [2, 17, 94, 1, 23, 37];
+// 2) перепишіть функцією findSmallestNumber(numbers)
+// console.log(findSmallestNumber([2, 17, 94, 1, 23, 37]));
+// console.log(findSmallestNumber([49, 4, 83, 7, 12]));
+
+// const numbers = [2, 17, 94, 1, 23, 37];
+// let numberNew = numbers[0];
+// for (const number of numbers) {
+//     if (numberNew > number) {
+//         numberNew = number;
+//     }
+// }
+// console.log(numberNew);
+
+function findSmallestNumber(numbers) {
+    let numberNew = numbers[0];
+    for (const number of numbers) {
+        if (numberNew > number) {
+            numberNew = number;
+        }
+    } return numberNew;
 }
-
-logItems();
+console.log(findSmallestNumber([2, 17, 94, 1, 23, 37]));
+console.log(findSmallestNumber([49, 4, 83, 7, 12]));
