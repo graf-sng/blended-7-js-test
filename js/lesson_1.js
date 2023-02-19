@@ -25,8 +25,6 @@
 // const result = var1 + var2 + var3;
 // console.log(result);
 
-
-
 // ЗАДАЧА 4
 // ВИКОРИСТОВУЮЧИ КОНСТРУКЦІЮ IF...ELSE , НАПИШИ КОД, ЯКИЙ БУДЕ ЗАПИТУВАТИ:
 // "СКІЛЬКИ МІСЯЦІВ МАЄ РІК", ЯКЩО КОРИСТУВАЧ ВВОДИТЬ 12 ТО У КОНСОЛІ ПИШЕ ВІРНО, ЯКЩО НЕ ПРАВИЛЬНО КОРИСТУВАЧ ВВІВ, ТОДІ У КОНСОЛІ ПИШЕ
@@ -39,10 +37,8 @@
 // }
 // else { console.log("Не знаєте?? 12!!")}
 
-
 // ЗАДАЧА 5
 // НАПИШІТЬ ПРОГРАМУ, ЯКА ДОЗВОЛЯТИМЕ ЮЗЕРУ ВВОДИТИ ЧИСЛО І ОПРИДІЛЯТИМЕ ЧИ ЦЕ ПАРНЕ ЧИСЛО , ЧИ НЕ ПАРНЕ.
-
 
 // const seq = Number(prompt('Введіть число'));
 
@@ -99,7 +95,6 @@
 // genre.unshift('Реп', 'Регі');
 // console.log(genre);
 
-
 // ЗАДАЧА 2
 // Напишіть ф-цію logItems(array) , яка буде получати масив і використовуючи цикл for , який для кожного елемента масива буде виводити в консоль
 // повідомлення у форматі <індекс елемента> та <значення елемента>.
@@ -132,7 +127,7 @@
 //     }
 // }
 // console.log(numberNew);
-
+/*
 function findSmallestNumber(numbers) {
     let numberNew = numbers[0];
     for (const number of numbers) {
@@ -143,3 +138,26 @@ function findSmallestNumber(numbers) {
 }
 console.log(findSmallestNumber([2, 17, 94, 1, 23, 37]));
 console.log(findSmallestNumber([49, 4, 83, 7, 12]));
+*/
+
+/*
+ЗАДАЧА 4
+ Провірте , чи являється рядок полідромом*/ /*
+const str = "ротатор"; //true
+const newString = "Hello"; //false
+*/
+// const array = str.split("");
+// //console.log(array);
+
+// const arr2 = str.split("").reverse().join("");
+// const arr3 = newString.split("").reverse().join("");
+
+// console.log(arr2 === str);
+// console.log(arr3 === newString);
+
+function qwe(str) {
+  let we = str.split("").reverse().join("");
+  return str === we;
+}
+
+console.log(qwe("Hello"));
