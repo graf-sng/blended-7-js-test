@@ -44,3 +44,30 @@
 //   return sum;
 // }
 // console.log(total(salaries));
+
+// ЗАДАЧА 3
+// Створи обєкт calculator(калькулятор) з 3-ма методами:
+// read()- запитує 2 значення у юзера і зберігає їх як значення обєкта;
+// sum() -повертає суму збережених значень;
+// mult() -перемножує значення збережені і повертає результат;
+
+const calculator = {
+  a: null,
+  b: null,
+
+  read() {
+    this.a = Number(prompt('введіть значення а'));
+    this.b = Number(prompt('введіть значення b'));
+  },
+
+  sum() {
+    return this.a + this.b;
+  },
+
+  mult() {
+    return this.a * this.b;
+  },
+};
+calculator.read();
+console.log(`sum`, calculator.sum());
+console.log(`mult`, calculator.mult());
