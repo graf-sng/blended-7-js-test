@@ -229,7 +229,97 @@ const scientists = [
 
 // 2)порахувати загальну суму років скільки прожили вчені , і визначити середнє значення;
 
-const born = scientists.reduce((acc, {born, dead}) => acc + (dead-born), 0);
+// const born = scientists.reduce((acc, {born, dead}) => acc + (dead-born), 0);
 
-console.log(born/scientists.length);
+// console.log(born/scientists.length);
+
+// 3)відсортувати по алфавіту;
+
+// const sortName = [...scientists].sort((a,b)=> (a.name[0] > b.name[0]) ? 1:-1)
+// const sortName = [...scientists].sort((a,b)=> (a.name[0] > b.name[0]) ? -5:1)
+// console.log(sortName)
+
+// 4)відсортувати по кількості прожитих років;
+
+// const year=[...scientists].sort((a,b)=>(a.dead-a.born) -(b.dead-b.born))
+
+// console.log(year)
+
+//  5)відфільтрувати, хто народився в 15,16,17ст;
+
+// {
+//   name: "Hanna",
+//   surname: "Hammarström",
+//   born: 1829,
+//   dead: 1909,
+//   id: 12,
+// },
+// const year=scientists.filter(({born})=>born>1400 && born<1700)
+
+
+// console.log(year)
+
+// 6)знайти рік народження Albert Einstein;
+
+// const nameUser=scientists.find(({name,surname})=> name==='Albert' && surname=== 'Einstein')
+
+// console.log(nameUser.born)
+
+// 7)визначити, чи усі вчені працювали у 19ст;
+
+const workYear = scientists.every((item)=>item.dead>=1900)
+console.log(workYear)
+
+// ЗАДАЧА 4
+// Сортування примітивів.
+// Виконати сортування масиву цін зі спадання та зростання.
+// const prices = [2, 14, 1, 37, 26, 8];
+
+// ЗАДАЧА 5
+// Виконати сортування масиву назв моніторів в алфавітному та зворотному алфавітному порядку.
+// const items = ["SAMSUNG", "LG", "ASUS", "DELL", "BENQ"];
+
+// ЗАДАЧА 6
+// Зібрати в allTopics масив усіх предметів всіх курсів використовуючи flatMap.
+// Використовуючи Array.prototype.filter виконати фільтрацію, залишивши в uniqueTopics тільки унікальні елементи.
+
+// const courses = [
+//   {
+//     name: "Basic HTML+CSS",
+//     topics: ["VSCode", "HTML", "CSS", "GitHub Desktop", "GitHub"],
+//   },
+//   {
+//     name: "Intermediate HTML+CSS",
+//     topics: ["VSCode", "Terminal", "Git", "GitHub", "HTML", "CSS"],
+//   },
+//   {
+//     name: "Basic JavaScript",
+//     topics: [
+//       "VSCode",
+//       "Type system",
+//       "Loops",
+//       "Functions",
+//       "Conditions",
+//       "Classes",
+//       "DOM",
+//       "Git",
+//       "GitHub",
+//     ],
+//   },
+//   {
+//     name: "Intermediate JavaScript",
+//     topics: [
+//       "VSCode",
+//       "NPM",
+//       "Bundlers",
+//       "Transpiling",
+//       "Promises",
+//       "AJAX",
+//       "Git",
+//       "GitHub",
+//     ],
+//   },
+// ];
+
+
 
